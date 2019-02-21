@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LogInActivity">
+
+    <TextView
+        android:id="@+id/messageLogIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Hello World!"
+        app:layout_constraintEnd_toEndOf="@+id/codeLogIn"
+        app:layout_constraintStart_toStartOf="@+id/codeLogIn"
+        app:layout_constraintTop_toBottomOf="@+id/codeLogIn" />
+
+    <Button
+        android:id="@+id/buttonLogIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Button"
+        app:layout_constraintEnd_toEndOf="@+id/codeLogIn"
+        app:layout_constraintStart_toStartOf="@+id/codeLogIn"
+        app:layout_constraintTop_toBottomOf="@+id/messageLogIn" />
+
+    <EditText
+        android:id="@+id/phoneLogIn"
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:layout_marginStart="99dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="99dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:inputType="phone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.31" />
+
+    <EditText
+        android:id="@+id/codeLogIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:text="code"
+        app:layout_constraintEnd_toEndOf="@+id/phoneLogIn"
+        app:layout_constraintStart_toStartOf="@+id/phoneLogIn"
+        app:layout_constraintTop_toBottomOf="@+id/phoneLogIn" />
+
+</android.support.constraint.ConstraintLayout>
